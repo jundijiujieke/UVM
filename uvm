@@ -1,0 +1,19 @@
+
+
+
+xrun  -uvm +libtext_.v +xm64bit +xmtimescale+1ns/10ps +access+r +xmlicq +sv  -vlog_ext +.vh -disable_sem2009 \
+-F filelist.f  -y /edatools/xilinx/Vivado/2020.1/data/verilog/src/unisims +libext+.v \
+-input uvm.cmd -covoverwrite -coverage B -covdut dut -covtest test_cov_appo
+
+#xrun +r32_timer2/axi_i2c.out -uvm +libtext_.v +xm64bit +xmtimescale+1ns/10ps +access+r +xmlicq +sv -sv_lib cust_systemc.so -vlog_ext +.vh -disable_sem2009 -F rtl32_axi_tee_i2s_sd.f  \
+#-y /edatools/xilinx/Vivado/2020.1/data/verilog/src/unisims +libext+.v \
+#-input risc_v32_tee_i2s_sd.cmd
+
+
+# -f $XILINX_VIVADO/data/secureip/secureip_cell.list.f               \
+# -f $XILINX_VIVADO/data/secureip/axi_bfm/axi_bfm_cell.list.f        \
+# -y $XILINX_VIVADO/data/verilog/src/unimacro +libext+.v             \
+# -y $XILINX_VIVADO/data/verilog/src/retarget +libext+.v             \
+# -f customer_file_list.f $XILINX_VIVADO/data/verilog/src/glbl.v
+
+
