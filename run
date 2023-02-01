@@ -1,3 +1,0 @@
-ncverilog +sv +access+rwc -f filelist.f -licqueue -timescale 1ns/1ps -uvm -uvmhome $UVM_HOME \
-    +gui 
-
